@@ -5,6 +5,15 @@ This project demonstrates a simple replatforming scenario where an application i
 
 The focus is on containerizing the application and defining how it would be deployed and exposed in an OpenShift environment.
 
+## Production Considerations
+
+- High availability using multiple replicas
+- Resource limits and requests
+- Health checks (liveness/readiness probes)
+- Persistent storage for stateful workloads
+- CI/CD integration for automated deployments
+- Security policies (RBAC, network policies)
+
 ## Architecture
 - Application: Node.js
 - Containerized using Docker
