@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: openshift-demo-route
+spec:
+  to:
+    kind: Service
+    name: openshift-demo-service
+  port:
+    targetPort: 80
